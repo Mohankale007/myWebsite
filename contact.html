@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=
+Mulish:ital,wght@1,300&family
+=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1
+,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawes
+ome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <!-- <a href="index.html"><img src="logo.png" </a> -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+       <h1>CONTACT ME</h1>
+
+    </section>
+    <!------contact us------>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=
+        !1m18!1m12!1m3!1d15135.447503609063!2d73.7825347264332
+        8!3d18.489914698828112!2m3!1f0!2f0!3f0!3m2!1i
+        1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf03a69a3a29%
+        3A0xb9aaca670f0a300a!2sRMD%20SINHGAD%20SPRING%20D
+        ALE%20SCHOOL!5e0!3m2!1sen!2sin!4v1670085922522!5m2!1s
+        en!2sin" width="800" height="600" style="border:0;"
+         allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </section>
+    <section class="contact-us">
+        <div class="row">
+           <div class="contact-col">
+            <div>
+                <a href="#" class="fa fa-home"> </a>
+                <span>
+                    <h5>F/N-202 B-wing Saiprasad Apatrment</h5>
+                    <p>Warje Pune-58 Maharastra, India</p>
+                </span>
+            </div>
+            <div>
+                <a href="#" class="fa fa-phone"> </a>
+                <span>
+                    <h5>+91 9158811630</h5>
+                    <p>24*7h</p>
+                </span>
+            </div>
+            <div>
+                <a href="#" class="fa fa-envelope-o"> </a>
+                <span>
+                    <h5>mmkale7@gmail.com</h5>
+                    <p>Email me</p>
+                </span>
+            </div>
+           </div> 
+           <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea  rows="8" name="message" placeholder="Message"required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+           </div>
+           
+        </div>
+    </section>
+
+   <!------Footer------>
+   <section class="footer">
+    <h4>ABOUT ME</h4>
+    <p>I'm Mohan Kale, a Indian Software developer based in Pune. 
+        I am an Engineering student, who loves to make Websites and learn new technologies. <br> 
+        I work in such fields as coding, Designing.</p>
+       <div class="icons">
+        <a href="#" class="fa fa-facebook"> </a>
+        <a href="#" class="fa fa-twitter"> </a>
+        <a href="#" class="fa fa-linkedin"> </a>
+        <a href="#" class="fa fa-instagram"> </a>
+        <a href="#" class="fa fa-google"> </a>     
+       </div>
+       <p>Made by Mohan Kale</p>
+   </section>
+
+
+
+    <!------JavaScipt for Toggle menu------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";            
+        }
+        function hideMenu(){
+            navLinks.style.right = "-270px";            
+        }
+    </script>
+</body>
+</html>
